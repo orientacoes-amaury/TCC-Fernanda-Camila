@@ -1,0 +1,288 @@
+:: StoryTitle
+Escolhas Diárias: Uma Jornada com Diabetes
+
+
+:: StoryData
+{
+  "ifid": "7A4BBE35-24AB-40E2-8C88-67372700A68A",
+  "format": "SugarCube",
+  "format-version": "1.0.35",
+  "start": "Glicemia",
+  "zoom": 1
+}
+
+
+:: Apertar o botão de soneca {"position":"900,700","size":"100,100"}
+TRIM! TRIM! TRIM!
+
+O despertador toca, mas Ana, ainda sonolenta, estica a mão e aperta o botão de soneca. "Só mais cinco minutinhos", pensa ela. 
+
+TRIM! TRIM! TRIM!
+
+Ana abre os olhos assustada. Já são 7:15! Ela deveria estar saindo de casa agora! Ana se levanta às pressas, pega a primeira roupa que vê e se veste enquanto procura os sapatos. O cabelo fica preso de qualquer jeito, e ela mal tem tempo de se olhar no espelho.
+
+<<set $glicemia = 180>><<glicemiaEmoji>>
+
+[[Escolher o café da manhã rapidamente |cafe da manha]] 
+
+
+:: Assistir TV {"position":"900,1700","size":"100,100"}
+Ana olha para o tênis, mas a tentação do sofá e da TV é mais forte. "Vou deixar a caminhada para amanhã", ela pensa, enquanto se joga no sofá. 
+
+Ela pega o controle remoto, se acomoda e começa a mudar de canal, tentando desligar a mente. Um programa de culinária chama sua atenção, e ela fica entretida.
+
+Quando Ana finalmente se levanta para ir dormir, sente o corpo pesado e uma leve dor de cabeça persistente. Seus membros parecem mais inchados que o normal, e há uma sensação de letargia que não consegue afastar.
+
+"Amanhã será diferente" promete a si mesma, mas uma parte dela questiona se terá força de vontade para fazer escolhas melhores. Ela adormece com um sono inquieto, acordando várias vezes durante a noite com sede e precisando ir ao banheiro.
+
+<<set $glicemia = 240>><<glicemiaEmoji>>
+
+[[Iniciar um novo dia |acordar]]
+
+
+:: Fazer uma caminhada {"position":"400,1700","size":"100,100"}
+Ana olha para o tênis e, mesmo sentindo o peso do cansaço, decide que não pode adiar mais. Coloca o tênis e sai para a rua, deixando o ar fresco e o som dos seus passos trazerem uma sensação de alívio. Conforme caminha, ela sente o estresse do dia se dissipando aos poucos.
+
+Cada passo a faz se sentir mais energizada e em controle. Depois de 30 minutos, ela para para verificar sua glicemia e sorri ao ver que os números caíram para níveis mais saudáveis. A atividade física está funcionando exatamente como seu médico havia dito.
+
+Ao se preparar para dormir, Ana reflete sobre suas escolhas. Seu corpo se sente leve e energizado, sem aquela fadiga extrema que costumava sentir.
+
+"Um dia de cada vez", pensa ela, sentindo uma sensação de orgulho e esperança que não experimentava havia muito tempo. Ela adormece tranquila, sabendo que está construindo hábitos que a ajudarão a viver bem com o diabetes.
+
+<<set $glicemia = 160>><<glicemiaEmoji>>
+
+[[Iniciar um novo dia |acordar]]
+
+
+:: Glicemia {"position":"525,375","size":"100,100"}
+<<widget "glicemiaEmoji">> <<set $emoji = "😐">> <<set $status = "normal">> <<if $glicemia < 70>> <<set $emoji = "😵">> <<set $status = "hipoglicemia">> <<elseif $glicemia <= 99>> <<set $emoji = "😊">> <<set $status = "ótima">> <<elseif $glicemia <= 140>> <<set $emoji = "😐">> <<set $status = "aceitável">> <<elseif $glicemia <= 180>> <<set $emoji = "😟">> <<set $status = "elevada">> <<elseif $glicemia <= 250>> <<set $emoji = "😠">> <<set $status = "alta">> <<else>> <<set $emoji = "🥵">> <<set $status = "muito alta">> <</if>> <div class="glicemia-container"> <span class="emoji">$emoji</span> <div> <span>Glicemia:</span> <span class="valor">$glicemia mg/dL</span> <span class="status">($status)</span> </div> </div> <</widget>> <<goto "Inicio">>
+
+
+:: Hambúrguer de carne com queijo, bacon, batatas fritas e refrigerante {"position":"900,1500","size":"100,100"}
+O cardápio oferece algumas opções irresistíveis, e Ana, apesar de saber que deveria ser mais cautelosa, não resiste. Ela pede o hambúrguer de carne com queijo, bacon, batatas fritas e refrigerante. 
+
+Quando a comida chega, o cheiro a envolve, e cada mordida traz um prazer momentâneo. No entanto, perto do final da refeição, Ana começa a sentir um desconforto: sua boca está seca, e há uma leve dor de cabeça se formando. 
+
+<<set $glicemia = 260>><<glicemiaEmoji>>
+
+[[Seguir para o próximo momento do dia|caminhada]]
+
+
+:: Ignorar e seguir em frente {"position":"900,1100","size":"100,100"}
+Ana hesita por um momento, mas decide seguir em frente. "Não vou voltar agora", pensa ela, "Posso tomar o remédio mais tarde." Ela tenta afastar o desconforto crescente, convencendo-se de que conseguirá resolver isso depois.
+
+Conforme dirige, Ana percebe que está com a boca mais seca que o normal e sente uma leve dor de cabeça se formando. Sua glicemia continua subindo sem a ação da medicação.
+
+<<set $glicemia = 210>><<glicemiaEmoji>>
+
+[[Retomar o caminho para o trabalho|trabalho]] 
+
+
+:: Inicio {"position":"650,375","size":"100,100"}
+Ana, 38 anos, é professora e foi diagnosticada com diabetes mellitus tipo 2 (DM2) há cinco anos. Ela sabe que precisa mudar seus hábitos, mas sua rotina atarefada e suas escolhas dificultam essa transição. Hoje, ela terá um dia decisivo, e VOCÊ ajudará a guiá-la em suas escolhas.
+
+Cada decisão que Ana tomar influenciará seu dia, seu bem-estar e sua saúde a longo prazo. Escolha com sabedoria! 
+
+[[Clique para iniciar|acordar]]
+
+
+:: Levantar e se preparar para o dia {"position":"400,700","size":"100,100"}
+Ana se espreguiça e se levanta. No guarda-roupa, escolhe uma roupa confortável e a veste sem pressa. Diante do espelho, ajeita o cabelo e respira fundo. O dia está apenas começando, e ela se sente pronta e tranquila.
+
+<<set $glicemia = 165>><<glicemiaEmoji>>
+
+[[Preparar o café da manhã |cafe da manha]] 
+
+
+:: Mergulhar no trabalho {"position":"900,1300","size":"100,100"}
+O peso das responsabilidades pesa sobre Ana, mas, em vez de dar atenção ao estresse, ela decide simplesmente começar. Sem perder tempo, ela começa a trabalhar na primeira tarefa que vê à sua frente, ignorando a sobrecarga.
+
+As horas passam e ela segue mergulhada no trabalho, sem pausas, tentando lidar com tudo ao mesmo tempo. Ana percebe que está com a boca seca e sente uma leve tontura, mas ignora esses sinais. Sua glicemia sobe devido ao estresse e à falta de pausas para se hidratar ou se movimentar.
+
+<<set $glicemia = 240>><<glicemiaEmoji>>
+
+[[Seguir para o próximo momento do dia|almoço]]
+
+
+:: Peito de frango grelhado, acompanhado de arroz e um brócolis no vapor {"position":"400,1500","size":"100,100"}
+Ana olha para o cardápio e, embora as opções mais calóricas chamem sua atenção, ela decide focar em sua saúde. Opta pelo peito de frango grelhado suculento, acompanhado de arroz e brócolis no vapor.
+
+Enquanto saboreia a refeição, ela percebe como o prato equilibrado faz seu corpo se sentir bem. A combinação de proteína magra, vegetais frescos e carboidratos complexos a deixa satisfeita, sem a sensação de cansaço que às vezes vem após uma refeição pesada. Sua glicemia responde positivamente à escolha.
+
+<<set $glicemia = 140>><<glicemiaEmoji>>
+
+[[Seguir para o próximo momento do dia|caminhada]]
+
+
+:: Preparar omelete {"position":"400,900","size":"100,100"}
+Ana olha para o pão, mas decide que a saúde precisa ser sua prioridade. Ela pega dois ovos e começa a preparar uma omelete simples. Coloca um fio de azeite na frigideira, bate os ovos com uma pitada de sal e os despeja na panela quente. 
+
+Enquanto a omelete cozinha, ela decide também preparar um lanche para mais tarde: pega uma maçã vermelha, a lava cuidadosamente e a deixa pronta para comer durante o dia.
+
+O cheiro da omelete logo preenche a cozinha, e Ana está satisfeita com a escolha saudável que fez. Após comer, ela se sente energizada e bem disposta, com a sensação de que está cuidando de sua saúde.
+
+<<set $glicemia = 150>><<glicemiaEmoji>>
+
+[[Seguir para o trabalho|remedio]]
+
+
+:: Pão de forma com manteiga {"position":"900,900","size":"100,100"}
+Ana olha para o pão de forma, por um momento, a tentação é forte, e ela pensa que merece algo simples e reconfortante. Decide então pegar uma fatia do pão e espalha um pouco de manteiga por cima, acompanhando com um café quente.
+
+O pão com manteiga derrete suavemente na boca, e o sabor reconfortante a satisfaz momentaneamente. Nos primeiros minutos, ela sente uma leve onda de energia, mas não demora muito até perceber um cansaço sutil e uma certa sonolência, efeito da oscilação de glicose que o pão provocou em seu corpo.
+
+<<set $glicemia = 220>><<glicemiaEmoji>>
+
+[[Seguir para o trabalho|remedio]]
+
+
+:: Se organizar e definir prioridades {"position":"400,1300","size":"100,100"}
+Em vez de se deixar consumir pela pressão, Ana respira fundo. Sentando-se à sua mesa, ela pega uma folha em branco e começa a listar suas tarefas, separando-as por urgência. Cada item que coloca na lista é uma forma de aliviar um pouco da sobrecarga.
+
+Ela se dá permissão para fazer uma coisa de cada vez, sabendo que organizar e definir prioridades pode ajudar a manter o controle. Ana se lembra de tomar um copo de água e faz uma breve pausa para respirar profundamente. Seu corpo responde positivamente a este momento de calma.
+
+<<set $glicemia = 150>><<glicemiaEmoji>>
+
+[[Seguir para o próximo momento do dia|almoço]]
+
+
+:: Voltar e pegar o remédio {"position":"400,1100","size":"100,100"}
+Ana para e, com um suspiro, decide voltar para casa. Ela sabe da importância de tomar o remédio para manter sua glicemia controlada. Ao chegar, encontra o frasco na mesa, toma o medicamento e aproveita para colocar um lembrete no celular, garantindo que não esquecerá novamente. 
+
+Quando retoma o caminho, sente-se mais tranquila e preparada para o dia. Uma leve dor de cabeça que estava começando desaparece, e Ana respira aliviada.
+
+<<set $glicemia = 140>><<glicemiaEmoji>>
+
+[[Retomar o caminho para o trabalho|trabalho]]
+
+
+:: acordar {"position":"650,575","size":"100,100"}
+<<set $glicemia = 165>><<glicemiaEmoji>>
+
+O despertador toca, quebrando o silêncio do quarto. Ana abre os olhos devagar, sentindo o corpo pesado e uma leve tontura. Sua última refeição foi no dia anterior, às 18h, e agora, tantas horas depois, ela sente o efeito de ficar muito tempo sem comer: fraqueza, mal-estar e um certo desconforto.
+
+O que você decide fazer?
+- [[Levantar e se preparar para o dia]]
+- [[Apertar o botão de soneca]]
+
+
+
+:: almoço {"position":"625,1350","size":"100,100"}
+Na hora do almoço, Carol aparece na porta da sala de Ana, sorrindo.
+
+Carol: "Vamos, Ana? Estou morrendo de fome!"
+
+Ana sorri e se levanta, elas saem juntas e se dirigem ao restaurante favorito de ambas, onde o cardápio está repleto de opções. 
+
+O que você decide fazer a seguir?
+- [[Peito de frango grelhado, acompanhado de arroz e um brócolis no vapor]]
+- [[Hambúrguer de carne com queijo, bacon, batatas fritas e refrigerante]]
+
+
+:: cafe da manha {"position":"650,800","size":"100,100"}
+O aroma do café preenche o ar ao entrar na cozinha. Ana olha ao redor, pensando no que escolher para o café da manhã. Seus olhos passam pela geladeira, lembrando-se dos ovos frescos que tem ali, e então se fixam na mesa, onde o pão de forma repousa ao lado da jarra de café, de onde ainda sobe uma fina nuvem de vapor quente.
+
+O que você decide fazer a seguir?
+- [[Preparar omelete]]
+- [[Pão de forma com manteiga]]
+
+
+
+:: caminhada {"position":"650,1575","size":"100,100"}
+Após o almoço, Ana segue seu dia de trabalho. As horas passam e, ao final do expediente, ela sente a sensação de dever cumprido, mas também o cansaço acumulado. Ao chegar em casa, Ana vê seu tênis de caminhada no canto da sala, lembrando-se da promessa que fez a si mesma de começar a se exercitar regularmente. O tênis parece convidativo, mas, ao mesmo tempo, o cansaço do dia a faz hesitar.
+
+O que você decide fazer a seguir?
+- [[Fazer uma caminhada]]
+- [[Assistir TV]]
+
+
+:: remedio {"position":"650,1000","size":"100,100"}
+Ana está a caminho, dirigindo calmamente, quando uma sensação de inquietação a invade. "Esqueci de tomar o remédio!" O pensamento surge claro, e ela se dá conta de que deixou o frasco em casa. 
+
+O que você decide fazer a seguir?
+- [[Voltar e pegar o remédio]]
+- [[Ignorar e seguir em frente]]
+
+
+:: trabalho {"position":"625,1175","size":"100,100"}
+Ao chegar ao trabalho, Ana é recebida por uma montanha de tarefas acumuladas, resultado das semanas intensas de provas. O peso das responsabilidades parece aumentar ainda mais a pressão. Ela sente o estresse tomando conta de seu corpo e mente. 
+
+O que você decide fazer a seguir?
+- [[Se organizar e definir prioridades]]
+- [[Mergulhar no trabalho]]
+
+
+:: StoryStylesheet [stylesheet]
+/* Definir uma fonte padrão para a história */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Personalizar a aparência das passagens */
+.passage {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 90%;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+/* Alterar a aparência dos links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Estilizando o link quando passa o mouse */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Personalizando a barra de navegação */
+.ui-bar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.glicemia-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--glicemia-cor, #ddd);
+    border-radius: 25px;
+    padding: 8px 16px;
+    margin: 10px 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.glicemia-container .emoji {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.glicemia-container div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.glicemia-container .valor {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.glicemia-container .status {
+    font-size: 14px;
+    opacity: 0.85;
+}
