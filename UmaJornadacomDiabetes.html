@@ -138,6 +138,12 @@ a:hover {
     font-size: 14px;
     opacity: 0.85;
 }
+
+.imagem-ajustada {
+    max-width: 100%;
+    height: auto;
+}
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Levantar e se preparar para o dia" tags="" position="400,700" size="100,100">Ana se espreguiça e se levanta. No guarda-roupa, escolhe uma roupa confortável e a veste sem pressa. Diante do espelho, ajeita o cabelo e respira fundo. O dia está apenas começando, e ela se sente pronta e tranquila.
 
 &lt;&lt;set $glicemia = 165&gt;&gt;&lt;&lt;glicemiaEmoji&gt;&gt;
@@ -224,7 +230,7 @@ Ao se preparar para dormir, Ana reflete sobre suas escolhas. Seu corpo se sente 
 
 [[Iniciar um novo dia |acordar]]</tw-passagedata><tw-passagedata pid="13" name="Inicio" tags="" position="650,375" size="100,100">Ana, 38 anos, é professora e foi diagnosticada com diabetes mellitus tipo 2 (DM2) há cinco anos. Ela sabe que precisa mudar seus hábitos, mas sua rotina atarefada e suas escolhas dificultam essa transição. Hoje, ela terá um dia decisivo, e VOCÊ ajudará a guiá-la em suas escolhas.
 
-Cada decisão que Ana tomar influenciará seu dia, seu bem-estar e sua saúde a longo prazo. Escolha com sabedoria! 
+Cada decisão que Ana tomar influenciará seu dia, seu bem-estar e sua saúde a longo prazo. Escolha com sabedoria!
 
 [[Clique para iniciar|acordar]]</tw-passagedata><tw-passagedata pid="14" name="Glicemia" tags="" position="525,375" size="100,100">&lt;&lt;widget &quot;glicemiaEmoji&quot;&gt;&gt; &lt;&lt;set $emoji = &quot;😐&quot;&gt;&gt; &lt;&lt;set $status = &quot;normal&quot;&gt;&gt; &lt;&lt;if $glicemia &lt; 70&gt;&gt; &lt;&lt;set $emoji = &quot;😵&quot;&gt;&gt; &lt;&lt;set $status = &quot;hipoglicemia&quot;&gt;&gt; &lt;&lt;elseif $glicemia &lt;= 99&gt;&gt; &lt;&lt;set $emoji = &quot;😊&quot;&gt;&gt; &lt;&lt;set $status = &quot;ótima&quot;&gt;&gt; &lt;&lt;elseif $glicemia &lt;= 140&gt;&gt; &lt;&lt;set $emoji = &quot;😐&quot;&gt;&gt; &lt;&lt;set $status = &quot;aceitável&quot;&gt;&gt; &lt;&lt;elseif $glicemia &lt;= 180&gt;&gt; &lt;&lt;set $emoji = &quot;😟&quot;&gt;&gt; &lt;&lt;set $status = &quot;elevada&quot;&gt;&gt; &lt;&lt;elseif $glicemia &lt;= 250&gt;&gt; &lt;&lt;set $emoji = &quot;😠&quot;&gt;&gt; &lt;&lt;set $status = &quot;alta&quot;&gt;&gt; &lt;&lt;else&gt;&gt; &lt;&lt;set $emoji = &quot;🥵&quot;&gt;&gt; &lt;&lt;set $status = &quot;muito alta&quot;&gt;&gt; &lt;&lt;/if&gt;&gt; &lt;div class=&quot;glicemia-container&quot;&gt; &lt;span class=&quot;emoji&quot;&gt;$emoji&lt;/span&gt; &lt;div&gt; &lt;span&gt;Glicemia:&lt;/span&gt; &lt;span class=&quot;valor&quot;&gt;$glicemia mg/dL&lt;/span&gt; &lt;span class=&quot;status&quot;&gt;($status)&lt;/span&gt; &lt;/div&gt; &lt;/div&gt; &lt;&lt;/widget&gt;&gt; &lt;&lt;goto &quot;Inicio&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="cafe da manha" tags="" position="650,800" size="100,100">O aroma do café preenche o ar ao entrar na cozinha. Ana olha ao redor, pensando no que escolher para o café da manhã. Seus olhos passam pela geladeira, lembrando-se dos ovos frescos que tem ali, e então se fixam na mesa, onde o pão de forma repousa ao lado da jarra de café, de onde ainda sobe uma fina nuvem de vapor quente.
 
@@ -251,7 +257,7 @@ O que você decide fazer a seguir?
 
 O que você decide fazer a seguir?
 - [[Fazer uma caminhada]]
-- [[Assistir TV]]</tw-passagedata><tw-passagedata pid="20" name="acordar" tags="" position="650,575" size="100,100">&lt;&lt;set $glicemia = 165&gt;&gt;&lt;&lt;glicemiaEmoji&gt;&gt;
+- [[Assistir TV]]</tw-passagedata><tw-passagedata pid="20" name="acordar" tags="" position="650,575" size="100,100">&lt;&lt;set $glicemia = 165&gt;&gt;&lt;&lt;glicemiaEmoji&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/orientacoes-amaury/TCC-Fernanda-Camila/0d525ff012324a0aa0f8e14327dbcec1db8c7dae/imagens/cena%201.png&quot; class=&quot;imagem-ajustada&quot; alt=&quot;Cena 1&quot;&gt;
 
 O despertador toca, quebrando o silêncio do quarto. Ana abre os olhos devagar, sentindo o corpo pesado e uma leve tontura. Sua última refeição foi no dia anterior, às 18h, e agora, tantas horas depois, ela sente o efeito de ficar muito tempo sem comer: fraqueza, mal-estar e um certo desconforto.
 

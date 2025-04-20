@@ -81,7 +81,7 @@ Conforme dirige, Ana percebe que está com a boca mais seca que o normal e sente
 :: Inicio {"position":"650,375","size":"100,100"}
 Ana, 38 anos, é professora e foi diagnosticada com diabetes mellitus tipo 2 (DM2) há cinco anos. Ela sabe que precisa mudar seus hábitos, mas sua rotina atarefada e suas escolhas dificultam essa transição. Hoje, ela terá um dia decisivo, e VOCÊ ajudará a guiá-la em suas escolhas.
 
-Cada decisão que Ana tomar influenciará seu dia, seu bem-estar e sua saúde a longo prazo. Escolha com sabedoria! 
+Cada decisão que Ana tomar influenciará seu dia, seu bem-estar e sua saúde a longo prazo. Escolha com sabedoria!
 
 [[Clique para iniciar|acordar]]
 
@@ -157,7 +157,7 @@ Quando retoma o caminho, sente-se mais tranquila e preparada para o dia. Uma lev
 
 
 :: acordar {"position":"650,575","size":"100,100"}
-<<set $glicemia = 165>><<glicemiaEmoji>>
+<<set $glicemia = 165>><<glicemiaEmoji>><img src="https://raw.githubusercontent.com/orientacoes-amaury/TCC-Fernanda-Camila/0d525ff012324a0aa0f8e14327dbcec1db8c7dae/imagens/cena%201.png" class="imagem-ajustada" alt="Cena 1">
 
 O despertador toca, quebrando o silêncio do quarto. Ana abre os olhos devagar, sentindo o corpo pesado e uma leve tontura. Sua última refeição foi no dia anterior, às 18h, e agora, tantas horas depois, ela sente o efeito de ficar muito tempo sem comer: fraqueza, mal-estar e um certo desconforto.
 
@@ -286,3 +286,9 @@ a:hover {
     font-size: 14px;
     opacity: 0.85;
 }
+
+.imagem-ajustada {
+    max-width: 100%;
+    height: auto;
+}
+
